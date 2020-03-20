@@ -4,8 +4,8 @@
         <ul class="filter-block__items">
             <li class="filt-item"><input type="checkbox" name="filter" id="item-ABB"  (change)="cheketFb('ABB')">ABB</li>
             <li class="filt-item"><input type="checkbox" name="filter" id="item-EIK" (change)="cheketFb('EIK')">EIK</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-Schneider" [(ngModel)]="isChecked" (change)="cheketFb(isChecked?'Schneider':'Schneider')">Schneider</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-KEAZ">КЭАЗ</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-Schneider" (change)="cheketFb('Schneider')">Schneider</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-KEAZ" (change)="cheketFb('KEAZ')">КЭАЗ</li>
         </ul>
     </div>
     <div  class="filter-block">

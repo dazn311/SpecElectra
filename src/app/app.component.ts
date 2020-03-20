@@ -9,6 +9,11 @@ export interface Cart {
   picUrl: string
   title: string
   compare: boolean
+  brand: string
+  type: string
+  series: string
+  countPolus: string
+  nomTok: string
 }
 
 @Component({
@@ -47,6 +52,6 @@ export class AppComponent implements OnInit{
   
   ])
 
-  public cartt: Cart = {id: 12, articul: "00A820", picUrl: "/assest/images/cart_ico.png", title: "Diff automatus", compare: false}
+  // public cartt: Cart = {id: 12, articul: "00A820", picUrl: "/assest/images/cart_ico.png", title: "Diff automatus", compare: false}
    
 }

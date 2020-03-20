@@ -8,7 +8,8 @@ import { Cart } from '../app.component';
   styleUrls: ['./cart.component.styl']
 })
 export class CartComponent implements OnInit {
-  @Input() resultFilter = []
+  
+  @Input() resultFilter: Cart
   constructor() { }
 
   ngOnInit() {
