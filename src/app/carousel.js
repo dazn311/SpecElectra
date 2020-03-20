@@ -24,6 +24,6 @@ export let  Carousel = (trig) => {
 
     setInterval( () => {
         moveLeft(200);
-    }, 1000);
+    }, 2000);
 
 };

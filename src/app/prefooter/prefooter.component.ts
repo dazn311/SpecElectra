@@ -1,5 +1,5 @@
-import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
-import { mvLeft } from '../animation'; 
+import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
+// import { mvLeft } from '../animation'; 
 import { Carousel } from  '../carousel.js'; 
 @Component({
   selector: 'block-prefooter',
@@ -14,7 +14,7 @@ export class PrefooterComponent implements OnInit, AfterViewInit {
 
   constructor( public divView: ElementRef) { }
 
-  public slids;
+  // public slids;
   
   ngOnInit() {
     
