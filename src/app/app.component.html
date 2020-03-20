@@ -41,7 +41,7 @@
                   <div class="pagination">1 2 3 4</div>
                 </div>
                 <div id="catalog-tovarov">
-                  <div *ngFor="let cart of carts; " class="catalog-item">
+                  <div *ngFor="let cart of carts | async " class="catalog-item">
                       <block-cart [cartt2]="cart"></block-cart>
                   </div>
                    

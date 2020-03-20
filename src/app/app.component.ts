@@ -16,7 +16,8 @@ export interface Cart {
 })
 export class AppComponent {
   title = 'Спец Электрик';
-  public carts: Cart[] = of ( [
+  // public carts: Cart[] =  [
+  public carts  = of ( [
     {id: 1, articul: "00A820", picUrl: "/assest/images/cart_ico.png", title: "Diff automatus", compare: false},
     {id: 2, articul: "00A821", picUrl: "/assest/images/cart_ico.png", title: "Diff automatus", compare: false},
     {id: 3, articul: "00A822", picUrl: "/assest/images/cart_ico.png", title: "Diff automatus", compare: false},
