@@ -1,0 +1,75 @@
+//top menu
+.container-1100 
+    margin: 0 auto
+    max-width 1100px
+
+.menu_bg
+    width 100%
+    height 30px
+    background #124bb3
+    position absolute
+    top 0
+    left 0
+    max-height 30px
+    z-index -1
+
+.menu
+    display flex
+    justify-content space-between
+    height 30px
+    max-height 30px
+    margin-top 0px
+    font-size 14px
+    font-weight 400
+    letter-spacing 0.35px
+
+.menu__item a
+    color #ffffff
+    font-family "Arial MT"
+    text-decoration underline
+
+.navigation:before
+    content: ""
+    background-image: url("../../assets/images/top_menu/navigation.png")
+    background-repeat no-repeat 
+    width 11px
+    height 15px
+    background-position: center;
+    position: absolute;
+    left: -13px;
+    top: 0px;
+.menu__item
+    position relative   
+    // navigation.png
+#menu__item-social
+    display flex
+    margin: -8px 0 0 0
+
+#menu__item-social>div
+    width 25px
+    height 25px
+    margin: 3px 12px 5px 0
+
+.enter, .registration
+    position relative
+
+.enter a, .registration a
+    text-decoration: none
+    color #fff
+    
+.enter:before, .registration:before
+    content ""
+    display block
+    background-repeat no-repeat
+    background-position 0 0
+    width 11px
+    height 18px
+    position absolute
+    left -18px
+    top 2px
+    
+.enter:before
+    background-image url('../../assets/images/top_menu/enter_icon.png')
+
+.registration:before
+    background-image url("../../assets/images/top_menu/reg_icon.png")
