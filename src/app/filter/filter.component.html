@@ -2,97 +2,97 @@
     <div class="filter-block">
         <p>Бренд</p>
         <ul class="filter-block__items">
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">ABB</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">EIK</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">Schneider</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">КЭАЗ</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-ABB"  (change)="cheketFb('ABB')">ABB</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-EIK" (change)="cheketFb('EIK')">EIK</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-Schneider" [(ngModel)]="isChecked" (change)="cheketFb(isChecked?'Schneider':'Schneider')">Schneider</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-KEAZ">КЭАЗ</li>
         </ul>
     </div>
     <div  class="filter-block">
         <p>Тип выключателей</p>
         <ul class="filter-block__items">
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">Автомат</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">УЗО</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">Диф. автомат</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">Контактор</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">Реле</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">Рубильник</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-auto">Автомат</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-uso">УЗО</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-diff">Диф. автомат</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-cont">Контактор</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-rele">Реле</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-rubl">Рубильник</li>
         </ul> 
     </div>
     <div  class="filter-block">
         <p>Серия</p>
         <ul class="filter-block__items-flex">
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">S</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">N</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-s">S</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-n">N</li>
             
         </ul> 
     </div> 
     <div  class="filter-block">
         <p>Количество полюсов</p>
         <ul class="filter-block__items-flex">
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">1</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">2</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">3</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-1">1</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-2">2</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-3">3</li>
             
         </ul> 
     </div> 
     <div  class="filter-block">
         <p>Номинальный ток</p>
         <ul class="filter-block__items-flex">
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">6</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">10</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">16</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">20</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">25</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">32</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">40</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">63</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-6">6</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-7">10</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-8">16</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-9">20</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-11">25</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-12">32</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-13">40</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-14">63</li>
             
         </ul> 
     </div> 
     <div  class="filter-block">
         <p>Номинальное напряжение</p>
         <ul class="filter-block__items-flex">
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">220</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">380</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-22">220</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-23">380</li>
             
         </ul> 
     </div> 
     <div  class="filter-block">
         <p>Отключающая способность</p>
         <ul class="filter-block__items-flex">
-            <li class="filt-item-flex-kA"><input type="checkbox" name="filter" id="item-filter">4,5 kA</li>
-            <li class="filt-item-flex-kA"><input type="checkbox" name="filter" id="item-filter">6 kA</li>
-            <li class="filt-item-flex-kA"><input type="checkbox" name="filter" id="item-filter">10 kA</li>
+            <li class="filt-item-flex-kA"><input type="checkbox" name="filter" id="item-33">4,5 kA</li>
+            <li class="filt-item-flex-kA"><input type="checkbox" name="filter" id="item-34">6 kA</li>
+            <li class="filt-item-flex-kA"><input type="checkbox" name="filter" id="item-35">10 kA</li>
             
         </ul> 
     </div> 
     <div  class="filter-block">
         <p>Номинальный отлючающий дифференциальный ток</p>
         <ul class="filter-block__items-flex">
-            <li class="filt-item-flex-kA"><input type="checkbox" name="filter" id="item-filter">10 kA</li>
-            <li class="filt-item-flex-kA"><input type="checkbox" name="filter" id="item-filter">20 kA</li>
-            <li class="filt-item-flex-kA"><input type="checkbox" name="filter" id="item-filter">30 kA</li>
+            <li class="filt-item-flex-kA"><input type="checkbox" name="filter" id="item-41">10 kA</li>
+            <li class="filt-item-flex-kA"><input type="checkbox" name="filter" id="item-42">20 kA</li>
+            <li class="filt-item-flex-kA"><input type="checkbox" name="filter" id="item-43">30 kA</li>
             
         </ul> 
     </div> 
     <div  class="filter-block">
         <p>Характеристика срабатывания</p>
         <ul class="filter-block__items-flex">
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">B</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">C</li>
-            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-filter">D</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-51">B</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-52">C</li>
+            <li class="filt-item-flex"><input type="checkbox" name="filter" id="item-53">D</li>
             
         </ul> 
     </div> 
     <div  class="filter-block">
         <p>Крепление</p>
         <ul class="filter-block__items">
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">винт</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">на DIN-рейку</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">на DIN-рейку или монтажную плату</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">на монтажную плату</li>
-            <li class="filt-item"><input type="checkbox" name="filter" id="item-filter">на панель через отверстия в корпусе</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-61">винт</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-62">на DIN-рейку</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-63">на DIN-рейку или монтажную плату</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-63">на монтажную плату</li>
+            <li class="filt-item"><input type="checkbox" name="filter" id="item-65">на панель через отверстия в корпусе</li>
             
         </ul> 
     </div>
