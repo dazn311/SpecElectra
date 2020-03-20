@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { of } from 'rxjs';
 
 export interface Cart {
   id: number
@@ -15,7 +16,7 @@ export interface Cart {
 })
 export class AppComponent {
   title = 'Спец Электрик';
-  public carts: Cart[] = [
+  public carts: Cart[] = of ( [
     {id: 1, articul: "00A820", picUrl: "/assest/images/cart_ico.png", title: "Diff automatus", compare: false},
     {id: 2, articul: "00A821", picUrl: "/assest/images/cart_ico.png", title: "Diff automatus", compare: false},
     {id: 3, articul: "00A822", picUrl: "/assest/images/cart_ico.png", title: "Diff automatus", compare: false},
@@ -28,10 +29,8 @@ export class AppComponent {
     {id: 10, articul: "00A829", picUrl: "/assest/images/cart_ico.png", title: "Diff automatus", compare: false},
     {id: 11, articul: "00A830", picUrl: "/assest/images/cart_ico.png", title: "Diff automatus", compare: false},
     {id: 12, articul: "00A831", picUrl: "/assest/images/cart_ico.png", title: "Diff automatus", compare: false},
-    
-   
   
-  ]
+  ])
 
   public cartt: Cart = {id: 12, articul: "00A820", picUrl: "/assest/images/cart_ico.png", title: "Diff automatus", compare: false}
    
